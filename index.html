@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="../Cinema/src/style.css">
+    <link rel="stylesheet" href="../Cinema/src/script.js">
+</head>
+<body>
+    <div class="body-container">
+    <header class="header">
+        <h1 class="header__title">
+            Best movies of all times
+        </h1>
+    </header>
+    <nav class="sort" id="sort">
+        <nav class="burger" onclick="toggleMobileMenu()">
+            <div class="burger_bar"></div>
+            <div class="burger_bar"></div>
+            <div class="burger_bar"></div>
+        </nav>
+        <span class="sort__label">
+            Sort by:
+        </span>
+        <a class="sort__item" href="#">
+            Movie name
+        </a>
+        <a class="sort__item" href="#">
+            Year of production
+        </a>
+    </nav>
+    <aside class="sidebar">
+            New in 2023
+    </aside>
+    <main class="main__content">
+        <article class="card">
+            <header class="card__header">
+                <h2 class="card__title">
+                    Catcher in the rye
+                </h2>
+                <span class="card__info">
+                    2022 Length: 2h 30min
+                </span>
+            </header>
+            <section class="card__content">
+                <p class="movie__description">
+                    The Catcher in the Rye, novel by J.D. Salinger published in 1951. The novel details two days in the life of 16-year-old Holden Caulfield after he has been expelled from prep school.<br> Confused and disillusioned, Holden searches for truth and rails against the “phoniness” of the adult world. He ends up exhausted and emotionally unstable. The events are related after the fact.
+                </p>
+                <hr>
+                <p class="producer__name">
+                    Directed by Nigel Tomm
+                </p>
+            </section>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <h2 class="card__title">
+                    Catcher in the rye
+                </h2>
+                <span class="card__info">
+                    2022 Length: 2h 30min
+                </span>
+            </header>
+            <section class="card__content">
+                <p class="movie__description">
+                    The Catcher in the Rye, novel by J.D. Salinger published in 1951. The novel details two days in the life of 16-year-old Holden Caulfield after he has been expelled from prep school.<br>  Confused and disillusioned, Holden searches for truth and rails against the “phoniness” of the adult world. He ends up exhausted and emotionally unstable. The events are related after the fact.
+                </p>
+                <hr>
+                <p class="producer__name">
+                    Directed by Nigel Tomm
+                </p>
+            </section>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <h2 class="card__title">
+                    Catcher in the rye
+                </h2>
+                <span class="card__info">
+                    2022 Length: 2h 30min
+                </span>
+            </header>
+            <section class="card__content">
+                <p class="movie__description">
+                    The Catcher in the Rye, novel by J.D. Salinger published in 1951. The novel details two days in the life of 16-year-old Holden Caulfield after he has been expelled from prep school.<br> Confused and disillusioned, Holden searches for truth and rails against the “phoniness” of the adult world. He ends up exhausted and emotionally unstable. The events are related after the fact.
+                </p>
+                <hr>
+                <p class="producer__name">
+                    Directed by Nigel Tomm
+                </p>
+            </section>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <h2 class="card__title">
+                    Catcher in the rye
+                </h2>
+                <span class="card__info">
+                    2022 Length: 2h 30min
+                </span>
+            </header>
+            <section class="card__content">
+                <p class="movie__description">
+                    The Catcher in the Rye, novel by J.D. Salinger published in 1951. The novel details two days in the life of 16-year-old Holden Caulfield after he has been expelled from prep school.<br> Confused and disillusioned, Holden searches for truth and rails against the “phoniness” of the adult world. He ends up exhausted and emotionally unstable. The events are related after the fact.
+                </p>
+                <hr>
+                <p class="producer__name">
+                    Directed by Nigel Tomm
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <p>
+            Wait for more
+        </p>
+    </footer>
+</div>
+<script type="text/javascript">
+    const nav = document.getElementById("sort");
+
+    function toggleMobileMenu(){
+        nav.classList.toggle("open");
+    }
+</script>
+</body>
+</html>
+
