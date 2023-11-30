@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(37, 27, 27);
+    color: white;
+}
+
+.body-container{
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-rows: 250px;
+    grid-auto-rows: auto; 
+    grid-template-areas: 
+    "hd hd"
+    "nav nav"
+    "sidebar main"
+    "footer footer";
+}
+
+.header{
+    grid-area: hd;
+    padding: 16px;
+    background-image: url("../src/images/main-page.jpeg");
+    background-position: center center;
+    background-size: cover;
+}
+.header__title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sort{
+    grid-area: nav;
+    display: flex;
+}
+
+.sort__label,
+.sort__item{
+    padding: 0 32px;
+    line-height: 3rem;
+    text-decoration: none;
+    color: white;
+    border-bottom: 5px solid transparent;
+}
+
+.sort__item:hover{
+    background-color: rgb(39, 18, 18);
+    border-bottom-color: rgb(234, 232, 232);
+}
+
+.sidebar{
+    grid-area: sidebar;
+    padding: 32px;
+}
+
+.main__content{
+    grid-area: main;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    width: 45%;
+    height: fit-content;
+    margin-bottom: 32px;
+    background-color: rgb(103, 89, 89);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.25s transform 0.25s;
+}
+
+.card:hover{
+    box-shadow: 0 0.5rem 0.45em -0.4rem #777;
+    transform: translateY(-0.25rem);
+}
+
+.card__header{
+    position: relative;
+    height: 250px;
+    overflow:hidden;
+    background-image: url(../src/images/catcher-in-the-rye.jpeg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.card__title{
+    position: absolute;
+    left: 16px;
+    bottom: 32px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.05rem; 
+    -webkit-text-stroke-color: rgba(0, 0, 0, .5);
+}
+
+.card__info{
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    color: rgb(248, 235, 235);
+    font-weight: 900;
+    text-shadow: 1px 1px 4px rgba(255, 255, 236, 0.7);
+}
+
+.card__content{
+    padding: 16px;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.card_-content p{
+    margin: 0;
+}
+
+.movie__description{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer{
+    grid-area: footer;
+    padding: 16px;
+    background-color: rgb(161, 33, 4);
+    text-align: center;
+}
+
+.burger{
+    display: none;
+}
+
+.burger_bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: bisque;
+}
+
+@media only screen and (max-width: 768px){
+    .body-container{
+        grid-template-columns: auto;
+        grid-template-rows: 100px;
+        grid-template-areas: 
+        "hd hd"
+        "nav nav"
+        "main main"
+        "footer footer";
+    }
+    .header{
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    .header__title{
+        font-size: 25px;
+        padding-top: 15px;
+    }
+
+    .sort{
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+    }
+
+    .sort .sort__label,
+    .sort .sort__item{
+        display: none;
+    }
+
+    .sort.open .sort__label,
+    .sort.open .sort__item{
+            display: block;
+            width: 100%;
+            padding: 0;
+
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .card{
+        width: 100%;
+        margin: 0 16px 16px 16px;
+    }
+
+    .burger{
+        display:inline-block;
+    }
+}
+
+
+
+
+
+
+
+
